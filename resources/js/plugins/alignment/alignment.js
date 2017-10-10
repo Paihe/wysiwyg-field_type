@@ -9,7 +9,7 @@
 					"align-left": "Align Left",
 					"align-center": "Align Center",
 					"align-right": "Align Right",
-					"align-justfiy": "Align Justfiy"
+					"align-justfiy": "Align Justify"
 				}
 			},
 			init: function()
@@ -20,7 +20,7 @@
 				dropdown.left = { title: that.lang.get('align-left'), func: that.alignment.setLeft };
 				dropdown.center = { title: that.lang.get('align-center'), func: that.alignment.setCenter };
 				dropdown.right = { title: that.lang.get('align-right'), func: that.alignment.setRight };
-				dropdown.justfiy = { title: that.lang.get('alugn-justify'), func: that.alignment.setJustify };
+				dropdown.justfiy = { title: that.lang.get('align-justify'), func: that.alignment.setJustify };
 
 				var button = this.button.add('alignment', this.lang.get('align'));
 				this.button.addDropdown(button, dropdown);
@@ -50,6 +50,7 @@
 			setJustify: function() {
 				this.buffer.set();
 				this.alignment.removeAlign();
+				console.log('heheheh');
 				this.block.addClass('text-justify');
 			},
 		};
