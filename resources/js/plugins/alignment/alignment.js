@@ -9,7 +9,7 @@
 					"align-left": "Align Left",
 					"align-center": "Align Center",
 					"align-right": "Align Right",
-					"align-justfiy": "Align Justify"
+					"align-justify": "Align Justify"
 				}
 			},
 			init: function()
@@ -50,7 +50,6 @@
 			setJustify: function() {
 				this.buffer.set();
 				this.alignment.removeAlign();
-				console.log('heheheh');
 				this.block.addClass('text-justify');
 			},
 		};
