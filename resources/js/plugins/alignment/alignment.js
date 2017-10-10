@@ -29,6 +29,7 @@
 			{
     		    this.block.removeClass('text-center');
     		    this.block.removeClass('text-right');
+    		    this.block.removeClass('text-justify');
 			},
 			setLeft: function()
 			{
