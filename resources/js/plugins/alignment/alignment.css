@@ -4,3 +4,11 @@
 .text-right {
     text-align: right;
 }
+
+.text-justify {
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    text-align-last: justify;
+    -moz-text-align-last: justify;
+    -webkit-text-align-last: justify;
+}
