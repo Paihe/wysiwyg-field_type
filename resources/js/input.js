@@ -67,7 +67,7 @@ $(document).on('ajaxComplete ready', function () {
             /**
              * Features
              */
-            minHeight: textarea.data('height'),
+            maxHeight: textarea.data('height'),
             placeholder: textarea.attr('placeholder'),
             folders: textarea.data('folders').toString().split(','),
             buttons: textarea.data('buttons').toString().split(','),
